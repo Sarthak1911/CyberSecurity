@@ -1,0 +1,376 @@
+/*CSS for index.html and other templates*/
+body{
+	position: relative;
+}
+
+body a{
+	text-decoration: none;
+	color: #212121;
+}
+
+header{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #212121;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+header .col{
+	padding: 0;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0.5em;
+	margin: 0;	
+}
+
+nav ul li h4{
+	display: inline;
+}
+
+nav ul li h4 a{
+	text-decoration: none;
+}
+
+nav ul li{
+	display: inline;
+	padding: 0;
+	margin: 0 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	padding: 0.8em 1em;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+nav ul li a:hover{
+	background: #000000;
+}
+
+main{
+	margin-top: 40px;
+}
+
+main h2{
+	font-size: 2em;
+	color: #212121;
+}
+
+main p{
+	font-size: 1.2em;
+}
+
+section{
+	margin: 10px;
+	height: 60vh;
+}
+
+.active{
+	background: #000000;	
+}
+
+.first-section{
+	height: inherit;
+	padding: 10px 0;
+	background: #4CAF50;
+	border: 1px solid #FAFAFA;
+	color: #FAFAFA;
+	transition: border 0.2s ease-in, color 0.2s ease-in, font-size 0.2s ease-in;
+}
+
+a .first-section:hover{
+	border: 1px solid #212121;
+	color: #212121;
+	font-size: 2em;
+	background-image: linear-gradient(to bottom, #4CAF50, #009688);
+}
+
+
+.second-section{
+	padding: 10px 0;
+	background: #F44336;
+	height: inherit;
+	border: 1px solid #FAFAFA;
+	color: #FFFFFF;
+	transition: border 0.2s ease-in, color 0.2s ease-in, font-size 0.2s ease-in;
+}
+
+a .second-section:hover{
+	border: 1px solid #212121;
+	color: #212121;
+	font-size: 2em;
+	background-image: linear-gradient(to bottom, #F44336, #F50057);	
+}
+
+
+/*Cyber crime */
+
+.abt-cybr-crime p{
+	font-weight: lighter;
+	font-size: 1.3em;
+}
+
+.abt-cybr-crime p:nth-child(5){
+	font-style: italic;
+}
+
+/*accordian style*/
+
+.accordian-container{
+	text-align: center;
+}
+
+.accordian-container a div{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #E3E3E3;
+	border: 1px solid #212121;
+}
+
+.accordian-container a h3{
+	font-weight: bolder;
+	padding: 5px;
+}
+
+
+.accordian-container > div{
+	background: #212121;
+	color: #FFFFFF;
+	padding: 10px;
+	font-size: 0.8em;
+	border: 1px solid #212121;
+	scroll-behavior: auto;
+	border-top: 1px solid #000000;
+}
+
+footer{
+	border-top: 1px solid #E0E0E0;
+	background: #FAFAFA;
+}
+
+footer a{
+	text-decoration: none;
+	color: #000000;
+}
+
+footer a:hover{
+	color: #03A9F4;
+}
+
+.contact-form .feedback-form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.contact-form div form input,textarea{
+	margin-bottom: 20px;
+}
+
+.contact-form div form input:focus{
+	outline: none;
+	border: 2px solid #2962FF;
+	box-shadow: 0 0 5px 1px #969696;
+	color: #212121;
+}
+
+.contact-form div form textarea:focus{
+	outline: none;
+	border: 2px solid #2962FF;
+	box-shadow: 0 0 5px 1px #969696;
+	color: #212121;
+}
+
+/*Transparency effect*/
+.slightly-trasparent{
+	opacity: 0.9;
+}
+
+/* CSS for Cesar Cipher*/
+.cesar-box .col{
+	text-align: center;
+}
+
+.awesome-input{
+	width: 100%;
+	border: 2px solid #212121;
+	padding: 18px;
+	font-family: Arial;
+	font-size: 1.3em;
+	transition: box-shadow 0.3s, border 0.3s;
+	outline: none;
+	resize: none;	
+}
+
+.cesar-box .message textarea:focus{
+	outline: none;
+	border: 2px solid #2962FF;
+	box-shadow: 0 0 5px 1px #969696;
+	color: #212121;
+}
+
+.cesar-box .cipher textarea:focus{
+	outline: none;
+	border: 2px solid #32CD32;
+	box-shadow: 0 0 5px 1px #969696;
+	color: #212121;
+}
+
+.cesar-box .encrypt{
+	padding: 0;
+}
+
+.cesar-box .encrypt a{
+	padding: 0;
+	transition: color 0.4s ease;
+	color: #212121;
+}
+
+.cesar-box .encrypt a:hover{
+	color: #4A148C;
+}
+
+.cesar-box .encrypt a i{
+	padding: 14px;
+}
+
+.cesar-box .encrypt select{
+	padding: 12px;
+	border: 2px solid #212121;
+	border-radius: 4px;
+	font-family: Arial;
+	font-size: 1.2em;
+	outline: none;
+}
+
+.crime-image-div{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.crime-image{
+	width: 60%;
+	height: auto;
+}
+
+.list-crimes a{
+	text-decoration: none;
+	color: #212121;
+	font-size: 1.3em;
+	font-weight: bolder;
+	transition: 0.2s ease-in color;
+}
+
+.list-crimes a:hover{
+	color: #4A148C;
+}
+
+/*Side nav style*/
+.open{
+	display: none;
+}
+
+.side-nav{
+	display: none;
+}
+
+.side-nav{
+	border: 1px solid #000000;
+	color: #FFFFFF;
+	background: #212121;
+	text-align: center;
+}
+
+.side-nav div{
+	padding: 10px 0;
+}
+
+.side-nav a{
+	color: #FFFFFF;
+}
+
+/*Media Queries*/
+/*For side nav*/
+
+
+.security_container{
+	padding: 10px;
+	border: 1px solid #212121;
+	border-radius: 10px;
+	background: #EEEEEE;
+	margin-top: 10px;
+}
+
+.security_nav_container{
+	list-style: none;
+	text-align: center;
+}
+
+.security_nav_container li{
+	text-decoration: none;
+	display: inline;
+	padding: 40px;
+}
+
+.security_nav_container li a{
+	text-decoration: none;
+	color: #212121;
+	transition: color 0.2s ease;
+}
+
+.security_nav_container li a:hover{
+	color: #4A148C;
+}
+
+.side-nav ul li .close-btn{
+	float: right;
+	font-size: 2em;
+}
+
+.quotes{
+	padding: 10px 15px;
+	border: 1px dashed #212121;
+	background: #E0E0E0;
+	border-radius: 0px 40px;
+	text-align: center;
+}
+
+.quotes p{
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+.in-center{
+	margin-top: 10%;
+}
+
+
+@media screen and (max-width: 650px){
+
+	.open{
+		display: block;
+	}
+	
+	.nav-desktop-screens{
+		display: none;
+	}
+
+	main{
+		margin-top: 0;
+	}
+
+	.grid{
+		padding: 0 10px;
+	}
+
+}
+
+/*Close side-nav when width > 650 * ? (Ask professor)/
+
+
+
+

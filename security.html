@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		/* CSS Document Security page */
+
+		nav ul li a{
+			text-transform: capitalize;
+		}
+
+		li  {
+			display: inline;
+			text-transform: uppercase;
+			font-family: calibri;
+			height: 24px;
+		}
+
+		h5 {
+		text-align:center;
+				color:#990000;
+				font-size:34px;}
+
+
+		.content:not(:first-of-type) {
+			display: none; /* Hides all but the first .content div */
+		}
+
+
+
+		li a {
+			padding: 0 15px 0 15px;
+			text-decoration: none;
+			line-height: 24px;
+		}
+
+		.expand {
+				color:#990000;
+				font-size:26px;}
+
+		.expand:hover {
+		cursor: pointer;}
+	</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+$(document).ready(function() {
+    $('li').click(function () {
+        $('.content:visible').hide(); // hides the visible content before 
+        $('.content').eq($(this).index()).show(); // shows the corresponding content
+    });
+    });
+</script>
+</head>
+<body>
+	<header class="slightly-trasparent">
+		<div class="grid nav-desktop-screens">
+			<div class="row">
+				<div class="col-desktop-12">
+					<div class="col">
+						<nav>
+							<ul>
+								<li><a href="index.html"><i class="fas fa-shield-alt"></i></a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="cybercrime.html">Crime</a></li>
+								<li><a href="security.html" class="active">Security</a></li>
+								<li><a href="future1.html">Future</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="open">
+		<a href="#">
+			<h3>&#9776;</h3>
+		</a>
+	</div>
+	<div class="side-nav slightly-trasparent">
+	
+		<div class="side-nav slightly-trasparent">
+	
+				<div class="row">
+					<div class="col-mobile-12"><a href="index.html">Home</a></div>
+					<div class="col-mobile-12"><a href="cybercrime.html">Crime</a></div>	
+					<div class="col-mobile-12"><a href="security.html">Security</a></div>
+					<div class="col-mobile-12"><a href="future1.html">Future</a></div>
+				</div>
+			
+			</div>
+	
+	</div>
+    
+    <main>
+        <div class="grid">
+			<div class="row">
+				<div class="col-desktop-12">
+					<h5>Cyber Security</h5>
+					<p>Privacy and security of the data will always be top security measures that any organization takes care. We are presently living in a world where all the information is maintained in a digital or a cyber form. Social networking sites provide a space where users feel safe as they interact with friends and family. In the case of home users, cyber-criminals would continue to target social media sites to steal personal data. Not only social networking but also during bank transactions a person must take all the required security measures.</p>
+				</div>
+			</div>
+			<a class="expand" onclick="myFunction()">TRENDS CHANGING CYBER SECURITY</a><br>
+            <div id="myDIV" class="row">
+<ul>
+    
+    <li> <a href="#">Web Servers</a></li>
+    <li><a href="#">Cloud Computing</a></li>
+    <li><a href="#">APT&#39s and targeted attacks</a></li>
+    <li><a href="#">Mobile Networks</a></li>
+    <li><a href="#">IPv6: New internet protocol</a></li>
+    <li><a href="#">Encryption of the code</a></li>
+    
+</ul>
+
+				<div class="content">
+                                <div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>Web Servers</h1>
+								<div class="crime-image-div">
+									<img src="images/Security_trend.jpg" alt="" class="crime-image">
+								</div>
+								<p>The threat of attacks on web applications to extract data or to distribute malicious code persists. Cyber criminals distribute their malicious code via legitimate web servers they have compromised. But data-stealing attacks, many of which get the attention of media, are also a big threat. Now, we need a greater emphasis on protecting web servers and web applications. Web servers are especially the best platform for these cyber criminals to steal the data. Hence one must always use a safer browser especially during important transactions in order not to fall as a prey for these crimes.</p>
+								</div>
+                </div>
+    
+				<div class="content">
+                   				<div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>Cloud Computing and its services</h1>
+								<div class="crime-image-div">
+									<img src="images/trend2.jpg" alt="" class="crime-image">
+								</div>
+								<p>These days all small, medium and large companies are slowly adopting cloud services. In other words the world is slowly moving towards the clouds. This latest trend presents a big challenge for cyber security, as traffic can go around traditional points of inspection. Additionally, as the number of applications available in the cloud grows, policy controls for web applications and cloud services will also need to evolve in order to prevent the loss of valuable information. Though cloud services are developing their own models still a lot of issues are being brought up about their security. Cloud may provide immense opportunities but it should always be noted that as the cloud evolves so as its security concerns increase.</p>
+								</div>
+                </div>
+
+				<div class="content">
+                   				<div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>APT&#39s and targeted attacks</h1>
+								<div class="crime-image-div">
+									<img src="images/trend3.jpg" alt="" class="crime-image">
+								</div>
+								<p>APT (Advanced Persistent Threat) is a whole new level of cyber crime ware. For years network security capabilities such as web filtering or IPS have played a key part in identifying such targeted attacks (mostly after the initial compromise). As attackers grow bolder and employ more vague techniques, network security must integrate with other security services in order to detect attacks. Hence one must improve our security techniques in order to prevent more threats coming in the future.</p>
+								</div>
+                </div>
+				<div class="content">
+                   				<div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>Mobile Networks</h1>
+								<div class="crime-image-div">
+									<img src="images/trend4.jpg" alt="" class="crime-image">
+								</div>
+								<p>Today we are able to connect to anyone in any part of the world. But for these mobile networks security is a very big concern. These days firewalls and other security measures are becoming porous as people are using devices such as tablets, phones, PC’s etc all of which again require extra securities apart from those present in the applications used. We must always think about the security issues of these mobile networks. Further mobile networks are highly prone to these cyber crimes a lot of care must be taken in case of their security issues.</p>
+								</div>
+                </div>
+                <div class="content">
+								<div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>IPv6: New internet protocol</h1>
+								<div class="crime-image-div">
+									<img src="images/trend5.jpg" alt="" class="crime-image">
+								</div>
+								<p>IPv6 is the new Internet protocol which is replacing IPv4 (the older version), which has been a backbone of our networks in general and the Internet at large. Protecting IPv6 is not just a question of porting IPv4 capabilities. While IPv6 is a wholesale replacement in making more IP addresses available, there are some very fundamental changes to the protocol which need to be considered in security policy. Hence it is always better to switch to IPv6 as soon as possible in order to reduce the risks regarding cyber crime.</p>
+								</div>
+                </div>
+                <div class="content">
+								<div class="security_container col-desktop-12 col-tablets-12 col-mobile-12">
+								<h1>Encryption of the code</h1>
+								<div class="crime-image-div">
+									<img src="images/trend6.jpg" alt="" class="crime-image">
+								</div>
+								<p>Encryption is the process of encoding messages (or information) in such a way that eavesdroppers or hackers cannot read it.. In an encryption scheme, the message or information is encrypted using an encryption algorithm, turning it into an unreadable cipher text. This is usually done with the use of an encryption key, which specifies how the message is to be encoded. Encryption at a very beginning level protects data privacy and its integrity. But more use of encryption brings more challenges in cyber security. Encryption is also used to protect data in transit, for example data being transferred via networks (e.g. the Internet, ecommerce), mobile telephones, wireless microphones, wireless intercoms etc. Hence by encrypting the code one can know if there is any leakage of information.</p>
+								</div>
+                </div>
+
+			</div>
+ 
+     
+        </div>
+ 
+ 
+    </main>
+			
+	<footer>
+		<div class="grid">
+			<div class="row">
+				<div class="col-desktop-12">
+					<div class="col">
+						
+							<p>Keeping you updated with latest trends in Cyber Security: Team M.A.R.S <i class="fas fa-shield-alt"></i></p>
+							<p>&copy; All rights reserved by team <a href="contact.html">M.A.R.S &#x2709;</a></p>
+							<a href="privacy.html" class="privacy">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+	<script type="text/javascript" src="js/side-nav.js"></script>
+</body>
+</html>

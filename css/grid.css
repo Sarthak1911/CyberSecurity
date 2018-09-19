@@ -1,0 +1,132 @@
+html{
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.grid{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.grid:before,
+.grid:after,
+.row:before,
+.row:after{
+	content: "";
+	display: table;
+}
+
+.grid:after,
+.row:after{
+	clear: both;
+}
+
+[class*='col-']{
+	width: 100%;
+	float: left;
+	min-height: 1px;
+}
+
+.col{
+	padding: 0.5em;
+	margin: 4px;
+	border-radius: 2px;
+}
+
+@media screen and (min-width: 320px){
+	.col-mobile-1 {width: 8.33333%;}
+    .col-mobile-2 {width: 16.66667%;}
+    .col-mobile-3 {width: 25%;}
+    .col-mobile-4 {width: 33.33333%;}
+    .col-mobile-5 {width: 41.66667%;}
+    .col-mobile-6 {width: 50%;}
+    .col-mobile-7 {width: 58.33333%;}
+    .col-mobile-8 {width: 66.66667%;}
+    .col-mobile-9 {width: 75%;}
+    .col-mobile-10 {width: 83.33333%;}
+    .col-mobile-11 {width: 91.66667%;}
+    .col-mobile-12 {width: 100%;}
+}
+
+@media screen and (min-width: 640px){
+	.col-tablet-1 {width: 8.33333%;}
+    .col-tablet-2 {width: 16.66667%;}
+    .col-tablet-3 {width: 25%;}
+    .col-tablet-4 {width: 33.33333%;}
+    .col-tablet-5 {width: 41.66667%;}
+    .col-tablet-6 {width: 50%;}
+    .col-tablet-7 {width: 58.33333%;}
+    .col-tablet-8 {width: 66.66667%;}
+    .col-tablet-9 {width: 75%;}
+    .col-tablet-10 {width: 83.33333%;}
+    .col-tablet-11 {width: 91.66667%;}
+    .col-tablet-12 {width: 100%;}
+}
+
+@media screen and (min-width: 1280px){
+	.col-desktop-1 {width: 8.33333%;}
+    .col-desktop-2 {width: 16.66667%;}
+    .col-desktop-3 {width: 25%;}
+    .col-desktop-4 {width: 33.33333%;}
+    .col-desktop-5 {width: 41.66667%;}
+    .col-desktop-6 {width: 50%;}
+    .col-desktop-7 {width: 58.33333%;}
+    .col-desktop-8 {width: 66.66667%;}
+    .col-desktop-9 {width: 75%;}
+    .col-desktop-10 {width: 83.33333%;}
+    .col-desktop-11 {width: 91.66667%;}
+    .col-desktop-12 {width: 100%;}
+}
+
+/*Buttons*/
+
+.button{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.button > div{
+    width: 150px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 0px;
+}
+
+/*Red button*/
+
+.button-red div:hover{
+    color: #F44336;
+    border: 2px solid #F44336;
+}
+
+.button-green div:hover{
+    color: #32CD32;
+    border: 2px solid #32CD32;
+}
+
+.button-blue div:hover{
+    color: #2962FF;
+    border: 2px solid #2962FF;
+}
+
+/*Center*/
+.in-center{
+    text-align: center;
+}
